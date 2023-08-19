@@ -1,0 +1,39 @@
+{
+    "webhookSecret": "CFtools-webhook-secret",
+    "port": 3001,
+    "logsDir": "/damage_logs",
+    "webhookUrl": "discord-webhook-to-send-alarms",
+	"discord_role": "ping-this-role",
+    "shortTermLogEntries": 20,
+	"minShortTermLogEntries": 10,
+    "shortTermThresholds": [
+        {
+            "zone": "torso",
+            "value": 90
+        },
+        {
+            "zone": "head",
+            "value": 40
+        },
+        {
+            "zone": "brain",
+            "value": 30
+        }
+    ],
+    "longTermThresholds": [
+        {
+            "zone": "torso",
+            "value": 90
+        },
+        {
+            "zone": "head",
+            "value": 30
+        },
+        {
+            "zone": "brain",
+            "value": 15
+        }
+    ],
+	"min_distance": 25
+}
+
